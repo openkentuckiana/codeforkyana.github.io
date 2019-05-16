@@ -7,7 +7,7 @@ bigimg: /img/2019-04-01-first-meeting-receap/header.jpg
 excerpt_separator: <!--more-->
 ---
 
-Code for Kentuckiana had our first meeting on March 9, 2017, and it was a great success.
+Code for Kentuckiana had our first meeting on March 9, 2019, and it was a great success.
 
 We started the day off with Kehontas Rowe introducing Code for Kentuckiana and its mission, followed by a round of introductions by attendees. We were fortunate to have attendees from a variety of backgrounds, including, but not limited to, social work, law, accounting, software development, IT, housing policy, health policy, urban planning, and more. This is a great mix of background and talents, and we firmly believe that solving big issues requires people from a wide range of backgrounds coming together to work on solving them together. Kehontas also spoke with [WAVE 3](http://www.wave3.com/2019/03/10/code-kentuckiana-advocates-technology-public-data/) about CFK.
 <!--more-->
