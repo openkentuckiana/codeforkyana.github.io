@@ -50,6 +50,12 @@ Code for Kentuckiana is governed by a Steering Committee and is led by two steer
 </div>
 
 <div class="bio">
+	<img src="/img/headshots/kyle-miller.jpg" alt="Kyle Miller">
+	<h5>Kyle Miller</h5>
+	<p>Kyle is a litigation associate at Bingham Greenebaum Doll. Prior to practicing law, he managed network administration and information security for a healthcare data analytics company, building professional experience around risk management, data privacy, security incident response, and regulatory compliance. He currently represents clients in general business litigation and advises businesses on issues of law and technology. Kyle helped launch the Music City Legal Hackers in Nashville, TN and enjoys facilitating the creation of technical solutions to local problems.</p>
+</div>
+
+<div class="bio">
 	<img src="/img/headshots/bret-walker.jpg" alt="Bret Walker">
 	<h5>Bret Walker</h5>
 	<p>Bret Walker is a software engineer. His interest in applying technology to inform and empower the public is the reason he launched Louie Watch, a site to aggregate disperate data sets to a block level, in 2013. That same year, he also became involved in Code for America through their brigade network. Bret has also served as a mentor at <a href="https://codelouisville.org">Code Louisville</a>.</p>
