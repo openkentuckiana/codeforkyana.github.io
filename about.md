@@ -56,6 +56,12 @@ Code for Kentuckiana is governed by a Steering Committee and is led by two steer
 </div>
 
 <div class="bio">
+	<img src="/img/headshots/ryane-puckett.jpg" alt="Ryane Puckett">
+	<h5>Ryane Puckett</h5>
+	<p>Ryane is a Neighborhood Liaison for the Center for Neighborhoods. Ryane was born and raised in Hobart, Indiana, but moved to Louisville in 2005. A resident of the Southside neighborhood for the past 10 years, she is very passionate about her neighborhood and has worked with her neighbors to enhance the many assets the Southend has to offer. As a graduate of the Neighborhood Institute and founder of the Southside Neighborhood Association, she was a volunteer for Better Block Woodlawn Avenue and a community leader on Southside PAINT project before joining the staff. Her interests include spending time with her husband and 2 daughters, finding hidden gems in cities, hosting dinner parties at her home, and learning what matters to other people.</p>
+</div>
+
+<div class="bio">
 	<img src="/img/headshots/bret-walker.jpg" alt="Bret Walker">
 	<h5>Bret Walker</h5>
 	<p>Bret Walker is a software engineer. His interest in applying technology to inform and empower the public is the reason he launched Louie Watch, a site to aggregate disperate data sets to a block level, in 2013. That same year, he also became involved in Code for America through their brigade network. Bret has also served as a mentor at <a href="https://codelouisville.org">Code Louisville</a>.</p>
