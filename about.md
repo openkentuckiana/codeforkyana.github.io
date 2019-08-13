@@ -31,6 +31,14 @@ Code for Kentuckiana is governed by a Steering Committee and is led by two steer
 <h3>Steering Committee Members</h3>
 
 <div class="bio">
+	<img src="/img/headshots/angela-graham.jpg" alt="Angela Graham">
+	<h5>Angela Graham</h5>
+	<p>Angela is a Community Health Administrator at the Center for Health Equity. Angela holds a Master’s Degree in Public Health from the University of Louisville School of Public Health and Information Sciences, with an emphasis in Epidemiology. She has expertise in social and behavioral science with nearly a decade of experience as a market research analyst, where she designed and analyzed survey research for clients in the pharmaceutical industry.</p>
+	<p>She specialized in large multinational programs, conducting public relations, messaging, and usage research in over 40 countries with patients and healthcare providers.</p>
+	<p>Angela also holds a Bachelor’s Degree in Economics and English from Case Western Reserve University.</p>
+</div>
+
+<div class="bio">
 	<img src="/img/headshots/chris-harrell.jpg" alt="Chris Harrell">
 	<h5>Chris Harrell</h5>
 	<p>Harrell is the Founder and Principal of Lazarus Group LLC, a firm engaged in crafting redevelopment strategies for distressed properties, corridors, and communities. As its Hyperlocal Data Team Leader Harrell assists the University of Louisville’s Center for Environmental Policy and Management (CEPM) with its <a href="http://louisville.edu/cepm/projects/brownfields-and-safe-soil/welcome-to-the-brownfields-community-benefits-project-page">US EPA Brownfields Community Benefits Assessment Project</a>. Outside of his vocation Harrell is a board member of Bicycling for Louisville, a not for profit active transportation advocacy, and has volunteered for many Food Co-Op and local food initiatives in Indianapolis and Louisville. Harrell launched ConnectOurCore.org in 2013 to advocate for community connectivity in the form of urban pathways connecting Louisville and Southern Indiana neighborhoods. In 2009 Harrell create the first GIS-based <a href="http://maps.indy.gov/MapIndy/index.html?theme=Brownfields">public inventory</a> of brownfield sites in the state of Indiana. In this early effort Harrell cultivated a fondness for fresh data, and burning desire to daylight Sanborn Fire Insurance Maps. Harrell remains devoted to promoting free-range public data & using it for civic benefit. </p>
