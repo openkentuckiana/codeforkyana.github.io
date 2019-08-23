@@ -14,8 +14,7 @@ use-site-title: true
 <p>Slack is an online tool that allows people to connect and collaborate. Please join the #code-for-kentuckiana channel in <a href="http://slack.codeforamerica.org">Code for America's Slack</a>.</p>
 
 <h3>Meetups</h3>
-<p>Our in person meetups will be posted on <a href="https://www.meetup.com/codeforkyana/">Meetup</a>. Please sign up to get notified of our events.</p>
-<iframe width="250" height="570" src="https://meetu.ps/3jQG92" frameborder="0" style="margin-bottom: -200px"></iframe>
+<p>Our in person meetups will be posted on <a href="https://www.meetup.com/codeforkyana/">Meetup</a>. Please <a href="https://www.meetup.com/codeforkyana/?action=join">sign up</a> to get notified of our events.</p>
 
 <h3>Code</h3>
 <p>GitHub is where we code collaboratively. Find us on GitHub at <a href="https://github.com/codeforkyana">https://github.com/codeforkyana</a></p>
