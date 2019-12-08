@@ -11,6 +11,10 @@ use-site-title: true
 
 <p>We will follow Code for America's proven model for building services, which you can read about <a href="https://www.codeforamerica.org/how">at CodeForAmerica.org</a>.</p>
 
+<h2>Projects</h2>
+<h3>LG&E/KU Power Outage Data</h3>
+<p>Since power outages have such a big impact on people, we wanted to make historical power outage information available for analysis. We built a scraper and now publish historical power outage information. <a href="/2019-12-07-power-utility-data/">Read the full announcement.</a></p>
+
 <h2>Planned Projects</h2>
 
 <h3>Renters' Rights</h3>
