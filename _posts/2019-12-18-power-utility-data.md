@@ -21,7 +21,7 @@ Every 6 hours, we publish the data to an online database that anyone can access 
 
 This online database is powered by a tool called [Datasette](https://github.com/simonw/datasette) that allows for exploration of the data. The data can be viewed and explored by clicking through the website or by using the SQL query language. We know that there is still a level of technical knowlege required to work with the data. It's our hope that others will take the data, perform analysis on it, and share their findings.
 
-One such example is the San Francisco Chronicle's project that used historiacl PG&E data build an [app comparing wind speed and power outages](https://projects.sfchronicle.com/2019/wind-outage-map/).
+One such example is the San Francisco Chronicle's project that used historical PG&E data to build an [app comparing wind speed and power outages](https://projects.sfchronicle.com/2019/wind-outage-map/).
 
 Please reach out if you have ideas about how to use the data and need any help.
 
@@ -59,7 +59,7 @@ If you would like to work with the raw SQLite database, you can download it here
 
 ### Technical Details
 
-This project was inspried by Simon Willison's [PG&E outage tracking project](https://simonwillison.net/2019/Oct/10/pge-outages/), and it follows same pattern he created and uses some of his code as a starting point.
+This project was inspried by Simon Willison's [PG&E outage tracking project](https://simonwillison.net/2019/Oct/10/pge-outages/), and it follows the same pattern he created and uses some of his code as a starting point.
 
 #### How we get the data
 
@@ -99,7 +99,7 @@ As for the data, it's fairly straightforward, and we mostly store it using the s
 }
 ```
 
-*Note*: The outage map only supports data to a [zoom level](https://wiki.openstreetmap.org/wiki/Zoom_levels) of 14, so any outages that are still clustered (very close together) at this zoom level can't be individually identified. In this case, we set the ID to the geometry polyine plus the start time of the cluster, since we wont' have an incident ID.
+*Note*: The outage map only supports data to a [zoom level](https://wiki.openstreetmap.org/wiki/Zoom_levels) of 14, so any outages that are still clustered (very close together) at this zoom level can't be individually identified. In this case, we set the ID to the geometry polyline plus the start time of the cluster, since we won't have an incident ID.
 
 We do make some assumptions about the data:
 
