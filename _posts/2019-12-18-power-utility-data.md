@@ -50,8 +50,8 @@ Each table has tools to build charts and maps. For example:
 <a href="http://poweroutages.codeforkentuckiana.org/outages?sql=select+snapshots.id%2C+title+as+snapshotTime%2C+hash%2C+sum%28outage_snapshots.estCustAffected%29+as+totalEstCustAffected%0D%0Afrom+snapshots+join+outage_snapshots+on+snapshots.id+%3D+outage_snapshots.snapshot%0D%0Awhere+snapshots.id+%3E%3D+40+and+snapshots.id+%3C%3D+71%0D%0Agroup+by+snapshots.id+order+by+snapshots.id+desc+limit+150#g.mark=line&g.x_column=snapshotTime&g.x_type=ordinal&g.y_column=totalEstCustAffected&g.y_type=quantitative"><img src="../img/2019-12-18-power-utility-data/customers_affected_over_time.png" alt="A chart of customers affected by power outages over time."></a>
 Here is a <a href="http://poweroutages.codeforkentuckiana.org/outages?sql=select+snapshots.id%2C+title+as+snapshotTime%2C+hash%2C+sum%28outage_snapshots.estCustAffected%29+as+totalEstCustAffected%0D%0Afrom+snapshots+join+outage_snapshots+on+snapshots.id+%3D+outage_snapshots.snapshot%0D%0Awhere+snapshots.id+%3E%3D+40+and+snapshots.id+%3C%3D+71%0D%0Agroup+by+snapshots.id+order+by+snapshots.id+desc+limit+150#g.mark=line&g.x_column=snapshotTime&g.x_type=ordinal&g.y_column=totalEstCustAffected&g.y_type=quantitative">chart of the number of affected customers over time.</a>
 
-<a href="http://poweroutages.codeforkentuckiana.org/outages?sql=select+snapshots.id%2C+title+as+snapshotTime%2C+hash%2C+sum%28outage_snapshots.estCustAffected%29+as+totalEstCustAffected%0D%0Afrom+snapshots+join+outage_snapshots+on+snapshots.id+%3D+outage_snapshots.snapshot%0D%0Awhere+snapshots.id+%3E%3D+40+and+snapshots.id+%3C%3D+71%0D%0Agroup+by+snapshots.id+order+by+snapshots.id+desc+limit+150#g.mark=line&g.x_column=snapshotTime&g.x_type=ordinal&g.y_column=totalEstCustAffected&g.y_type=quantitative"><img src="../img/2019-12-18-power-utility-data/most_recent_outages_map.png" alt="A map of outages for the most recent outage snapshot."></a>
-Here is a <a href="http://poweroutages.codeforkentuckiana.org/outages?sql=select+snapshots.id%2C+title+as+snapshotTime%2C+hash%2C+sum%28outage_snapshots.estCustAffected%29+as+totalEstCustAffected%0D%0Afrom+snapshots+join+outage_snapshots+on+snapshots.id+%3D+outage_snapshots.snapshot%0D%0Awhere+snapshots.id+%3E%3D+40+and+snapshots.id+%3C%3D+71%0D%0Agroup+by+snapshots.id+order+by+snapshots.id+desc+limit+150#g.mark=line&g.x_column=snapshotTime&g.x_type=ordinal&g.y_column=totalEstCustAffected&g.y_type=quantitative">map the outages included in the most recent snapshot.</a>
+<a href="http://poweroutages.codeforkentuckiana.org/outages/most_recent_snapshot"><img src="../img/2019-12-18-power-utility-data/most_recent_outages_map.png" alt="A map of outages for the most recent outage snapshot."></a>
+Here is a <a href="http://poweroutages.codeforkentuckiana.org/outages/most_recent_snapshot">map the outages included in the most recent snapshot.</a>
 
 #### Raw Data
 
@@ -63,9 +63,9 @@ This project was inspried by Simon Willison's [PG&E outage tracking project](htt
 
 #### How we get the data
 
-The data is scraped from the LG&E/KU website using the `lgeku_scraper` contained in our [`kubra-scraper`](https://github.com/codeforkyana/kubra-scraper) repository. LG&E/KU uses a product called [Kubra Storm Center](https://kubra.com/solutions/utility-maps/storm-center-outage-mapping/) to power their online map, and we've tried to make the underlying scraper generic enough to be used for other utilites that use Kubra. We'd love other brigades to try to use our code for utilities in their area.
+The data is scraped from the LG&E/KU website using the `lgeku_scraper` contained in our [`kubra-scraper` repository](https://github.com/codeforkyana/kubra-scraper) . LG&E/KU uses a product called [Kubra Storm Center](https://kubra.com/solutions/utility-maps/storm-center-outage-mapping/) to power their online map, and we've tried to make the underlying scraper generic enough to be used for other utilites that use Kubra. We'd love other brigades to try to use our code for utilities in their area.
 
-The outage information we scrape is stored in JSON format in our `power-outage-data` repository in a file named [`outages.json`](https://github.com/codeforkyana/power-outage-data/blob/master/lgeku/outages.json). One of Simon's insights was that the [commit history](https://github.com/codeforkyana/power-outage-data/commits/master/lgeku/outages.json) of a file is something an average user can read, and the JSON in the file is also somewhat approachable.
+The outage information we scrape is stored in JSON format in our [`power-outage-data` repository](https://github.com/codeforkyana/power-outage-data/) in a file named [`outages.json`](https://github.com/codeforkyana/power-outage-data/blob/master/lgeku/outages.json). One of Simon's insights was that the [commit history](https://github.com/codeforkyana/power-outage-data/commits/master/lgeku/outages.json) of a file is something an average user can read, and the JSON in the file is also somewhat approachable.
 
 Every 6 hours, we execute the `build_database` script in the `power-outage-data` repo to parse the history of `outages.json` and convert that data into a SQLite database, which is then published with Datasette.
 
@@ -99,10 +99,12 @@ As for the data, it's fairly straightforward, and we mostly store it using the s
 }
 ```
 
+*Note*: The outage map only supports data to a [zoom level](https://wiki.openstreetmap.org/wiki/Zoom_levels) of 14, so any outages that are still clustered (very close together) at this zoom level can't be individually identified. In this case, we set the ID to the geometry polyine plus the start time of the cluster, since we wont' have an incident ID.
+
 We do make some assumptions about the data:
 
 * `etr` means estimated time to resolution.
-* `n_out` represents the number of outages. It should always be `1` for a non-cluster outage. We always drill down until we find individual, not clustered, outages.
+* `n_out` represents the number of outages. It should always be `1` for a non-cluster outage.
 * `cust_a.val` is the number of customers affected.
 
 We always welcome feedback or examinations of our code to ensure the data is accurate. Please reach out if you spot any issues or have any questions.
