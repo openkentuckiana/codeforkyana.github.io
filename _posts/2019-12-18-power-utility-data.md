@@ -23,11 +23,11 @@ This online database is powered by a tool called [Datasette](https://github.com/
 
 One such example is the San Francisco Chronicle's project that used historiacl PG&E data build an [app comparing wind speed and power outages](https://projects.sfchronicle.com/2019/wind-outage-map/).
 
-Please reach out if you would have ideas about how to use the data and need any help.
+Please reach out if you have ideas about how to use the data and need any help.
 
 #### Understading the database
 
-We are following the same format Simon Willison used for his [PG&E outage tracking project](https://simonwillison.net/2019/Oct/10/pge-outages/). He has a great explanation for how the database works (adapted for LGE/KU):
+We are following the same format Simon Willison used for his [PG&E outage tracking project](https://simonwillison.net/2019/Oct/10/pge-outages/). He has a great explanation for how the database works (adapted for LG&E/KU):
 
 > The three key tables to understand are `outages`, `snapshots` and `outage_snapshots`.
 >
@@ -71,13 +71,13 @@ Every 6 hours, we execute the `build_database` script in the `power-outage-data`
 
 #### Important Caveats
 
-As with any scraped data, certian assumptions had to me made about the source data.
+As with any scraped data, certian assumptions had to be made about the source data.
 
 To try to ensure our data is accurate, we first load a [`currentState`](https://kubra.io/stormcenter/api/v1/stormcenters/877fd1e9-4162-473f-b782-d8a53a85326b/views/a6cee9e4-312b-4b77-9913-2ae371eb860d/currentState?preview=false) object from Kubra, using an `instanceId` and `regionId` we got from the Storm Center web app. This file tells us a couple pieces of information -- 1) the url to the most recent data (which changes every few minutes) and 2) identifiers we can use to load a `serviceareas.json` file, which will tell us the geometry for the entire service area. This step ensures that we are looking for outages in the entire service area.
 
 Next, we load another file the Storm Center uses, `<most recent data>/public/summary-1/data.json`. This file contains a count of the total number of outages. After running code to load all of the outages by loading zoomed-in parts of the map, we verify that the number of outages we found matches the summary's number of total outages. If it doesn't, we don't save the data, and [we log an error](https://github.com/codeforkyana/kubra-scraper/actions).
 
-As for the data, it's fairly strihtforward, and we mostly store it using the same format we receive it in. Here's what raw outage data looks like:
+As for the data, it's fairly straightforward, and we mostly store it using the same format we receive it in. Here's what raw outage data looks like:
 
 ```json
 "desc": {
