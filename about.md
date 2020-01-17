@@ -21,11 +21,9 @@ Code for Kentuckiana is governed by a Steering Committee and is led by two steer
 </div>
 
 <div class="bio">
-	<img src="/img/headshots/kehontas-rowe.jpg" alt="Kehontas Rowe">
-	<h5>Kehontas Rowe</h5>
-	<p>Kehontas is a native of Louisville, Kentucky and is a US Veteran holding two honorable discharges. Kehontas has a BA in Technology, Arts and Society from Mills College, an MSc in Cyber and Information Security and a Ph.D. candidate in Business Analytics and Decision Sciences (BADS).</p>
-	<p>Kehontas has volunteered and worked with women and girl tech-centered spaces including <a href="http://www.blackgirlscode.com/">Black Girls Code</a>, <a href="https://www.juliamorganschool.org">Julia Morgan School for Girls</a>, <a href="https://changingthepresent.org/collections/women-of-color-resource-center">Women of Color Resource Center</a> and founded the Mills College group Women in Math and Computer Science. Kehontas is a Google Women Techmakers Scholar ‘12. Kehontas is a contributor to “Misogynistic Language on Twitter”, research that identifies the correlation between degrading tweets towards women and reported rape statistics per capita by state.</p>
-	<p>Kehontas has a strong interest in improving the lives of individuals and groups who are not at the forefront of exposure or resources through technical and civic engagement and works a Data Analyst for <a href="https://kyyouth.org/">Kentucky Youth Advocates</a>.</p>
+	<img src="/img/headshots/ryane-puckett.jpg" alt="Ryane Puckett">
+	<h5>Ryane Puckett</h5>
+	<p>Ryane is a Neighborhood Liaison for the Center for Neighborhoods. Ryane was born and raised in Hobart, Indiana, but moved to Louisville in 2005. A resident of the Southside neighborhood for the past 10 years, she is very passionate about her neighborhood and has worked with her neighbors to enhance the many assets the Southend has to offer. As a graduate of the Neighborhood Institute and founder of the Southside Neighborhood Association, she was a volunteer for Better Block Woodlawn Avenue and a community leader on Southside PAINT project before joining the staff. Her interests include spending time with her husband and 2 daughters, finding hidden gems in cities, hosting dinner parties at her home, and learning what matters to other people.</p>
 </div>
 
 <h3>Steering Committee Members</h3>
@@ -36,12 +34,6 @@ Code for Kentuckiana is governed by a Steering Committee and is led by two steer
 	<p>Angela is a Community Health Administrator at the Center for Health Equity. Angela holds a Master’s Degree in Public Health from the University of Louisville School of Public Health and Information Sciences, with an emphasis in Epidemiology. She has expertise in social and behavioral science with nearly a decade of experience as a market research analyst, where she designed and analyzed survey research for clients in the pharmaceutical industry.</p>
 	<p>She specialized in large multinational programs, conducting public relations, messaging, and usage research in over 40 countries with patients and healthcare providers.</p>
 	<p>Angela also holds a Bachelor’s Degree in Economics and English from Case Western Reserve University.</p>
-</div>
-
-<div class="bio">
-	<img src="/img/headshots/chris-harrell.jpg" alt="Chris Harrell">
-	<h5>Chris Harrell</h5>
-	<p>Harrell is the Founder and Principal of Lazarus Group LLC, a firm engaged in crafting redevelopment strategies for distressed properties, corridors, and communities. As its Hyperlocal Data Team Leader Harrell assists the University of Louisville’s Center for Environmental Policy and Management (CEPM) with its <a href="http://louisville.edu/cepm/projects/brownfields-and-safe-soil/welcome-to-the-brownfields-community-benefits-project-page">US EPA Brownfields Community Benefits Assessment Project</a>. Outside of his vocation Harrell is a board member of Bicycling for Louisville, a not for profit active transportation advocacy, and has volunteered for many Food Co-Op and local food initiatives in Indianapolis and Louisville. Harrell launched ConnectOurCore.org in 2013 to advocate for community connectivity in the form of urban pathways connecting Louisville and Southern Indiana neighborhoods. In 2009 Harrell create the first GIS-based <a href="http://maps.indy.gov/MapIndy/index.html?theme=Brownfields">public inventory</a> of brownfield sites in the state of Indiana. In this early effort Harrell cultivated a fondness for fresh data, and burning desire to daylight Sanborn Fire Insurance Maps. Harrell remains devoted to promoting free-range public data & using it for civic benefit. </p>
 </div>
 
 <div class="bio">
@@ -61,12 +53,6 @@ Code for Kentuckiana is governed by a Steering Committee and is led by two steer
 	<img src="/img/headshots/kyle-miller.jpg" alt="Kyle Miller">
 	<h5>Kyle Miller</h5>
 	<p>Kyle is a litigation associate at Bingham Greenebaum Doll. Prior to practicing law, he managed network administration and information security for a healthcare data analytics company, building professional experience around risk management, data privacy, security incident response, and regulatory compliance. He currently represents clients in general business litigation and advises businesses on issues of law and technology. Kyle helped launch the Music City Legal Hackers in Nashville, TN and enjoys facilitating the creation of technical solutions to local problems.</p>
-</div>
-
-<div class="bio">
-	<img src="/img/headshots/ryane-puckett.jpg" alt="Ryane Puckett">
-	<h5>Ryane Puckett</h5>
-	<p>Ryane is a Neighborhood Liaison for the Center for Neighborhoods. Ryane was born and raised in Hobart, Indiana, but moved to Louisville in 2005. A resident of the Southside neighborhood for the past 10 years, she is very passionate about her neighborhood and has worked with her neighbors to enhance the many assets the Southend has to offer. As a graduate of the Neighborhood Institute and founder of the Southside Neighborhood Association, she was a volunteer for Better Block Woodlawn Avenue and a community leader on Southside PAINT project before joining the staff. Her interests include spending time with her husband and 2 daughters, finding hidden gems in cities, hosting dinner parties at her home, and learning what matters to other people.</p>
 </div>
 
 <div class="bio">
