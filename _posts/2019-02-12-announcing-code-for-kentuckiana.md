@@ -10,7 +10,7 @@ Code for Kentuckiana, a local brigade of [Code for America](https://www.codefora
 
 Code for Kentuckiana is the official Code for America [Brigade](https://brigade.codeforamerica.org) for Louisville, Ky. Currently, there are 70+ Brigades across the United States, bringing together community organizers, developers, and designers to use technology to improve the lives of citizens. Code For Kentuckiana’s mission is to organize and advocate for the use of public data and technology to make Louisville and Southern Indiana a more safe, resilient, and equitable place.
 <!--more-->
-The first membership meeting is tentatively scheduled for March 9th with updated information to follow online at codeforkentuckiana.org
+The first membership meeting is tentatively scheduled for March 9th with updated information to follow online at openkentuckiana.org
 
 A representative for Code for America noted: “Code for America is very excited to have Code for Kentuckiana as part of the Code for America Network! We look forward to seeing the work they produce to help those in their communities thrive, and working with them on behalf of work going on across the country”
 

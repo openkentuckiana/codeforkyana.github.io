@@ -17,7 +17,7 @@ Today, we are announcing the availability of a dataset of LG&E and KU Energy out
 
 The data comes from the [LG&E/KU outage map](https://stormcenter.lge-ku.com/default.html). Each outage is catalogued and stored for future analysis.
 
-Every 6 hours, we publish the data to an online database that anyone can access at [http://poweroutages.codeforkentuckiana.org/outages](http://poweroutages.codeforkentuckiana.org/outages).
+Every 6 hours, we publish the data to an online database that anyone can access at [http://poweroutages.openkentuckiana.org/outages](http://poweroutages.openkentuckiana.org/outages).
 
 This online database is powered by a tool called [Datasette](https://github.com/simonw/datasette) that allows for exploration of the data. The data can be viewed and explored by clicking through the website or by using the SQL query language. We know that there is still a level of technical knowlege required to work with the data. It's our hope that others will take the data, perform analysis on it, and share their findings.
 
@@ -31,15 +31,15 @@ We are following the same format Simon Willison used for his [PG&E outage tracki
 
 > The three key tables to understand are `outages`, `snapshots` and `outage_snapshots`.
 >
-> LG&E/KU assigns an outage ID to every outage. I store these in the [outages table](http://poweroutages.codeforkentuckiana.org/outages/outages).
+> LG&E/KU assigns an outage ID to every outage. I store these in the [outages table](http://poweroutages.openkentuckiana.org/outages/outages).
 >
-> Every 15 minutes I grab a snapshot of storm map, which reports every single outage that is currently ongoing. I store a record of when I grabbed that snapshot in the [snapshots table](http://poweroutages.codeforkentuckiana.org/outages/snapshots).
+> Every 15 minutes I grab a snapshot of storm map, which reports every single outage that is currently ongoing. I store a record of when I grabbed that snapshot in the [snapshots table](http://poweroutages.openkentuckiana.org/outages/snapshots).
 >
 > The most interesting table is `outage_snapshots`. Every time I see an outage on the storm map, I record a new copy of its data as an `outage_snapshot` row. This allows me to reconstruct the full history of any outage, in 15 minute increments.
 >
-> Here are [all of the outages](http://poweroutages.codeforkentuckiana.org/outages/outage_snapshots?snapshot=68) that were represented in [snapshot 68](http://poweroutages.codeforkentuckiana.org/outages/snapshots/68)—captured at 12:17pm Eastern Time on December 8, 2019.
+> Here are [all of the outages](http://poweroutages.openkentuckiana.org/outages/outage_snapshots?snapshot=68) that were represented in [snapshot 68](http://poweroutages.openkentuckiana.org/outages/snapshots/68)—captured at 12:17pm Eastern Time on December 8, 2019.
 >
-> I can run `select sum(estCustAffected) from outage_snapshots where snapshot = 68` ([try it here](http://poweroutages.codeforkentuckiana.org/outages?sql=select+sum%28estCustAffected%29+from+outage_snapshots+where+snapshot+%3D+%3Aid&id=68)) to count up the total LG&E/KU estimate of the number of affected customers (314 at this time).
+> I can run `select sum(estCustAffected) from outage_snapshots where snapshot = 68` ([try it here](http://poweroutages.openkentuckiana.org/outages?sql=select+sum%28estCustAffected%29+from+outage_snapshots+where+snapshot+%3D+%3Aid&id=68)) to count up the total LG&E/KU estimate of the number of affected customers (314 at this time).
 
 #### Visualizing data
 
@@ -47,15 +47,15 @@ It is possible to visualize outage data using a couple of [Datasette plugins](ht
 
 Each table has tools to build charts and maps. For example:
 
-<a href="http://poweroutages.codeforkentuckiana.org/outages?sql=select+snapshots.id%2C+title+as+snapshotTime%2C+hash%2C+sum%28outage_snapshots.estCustAffected%29+as+totalEstCustAffected%0D%0Afrom+snapshots+join+outage_snapshots+on+snapshots.id+%3D+outage_snapshots.snapshot%0D%0Agroup+by+snapshots.id+order+by+snapshots.id+desc+limit+100#g.mark=line&g.x_column=snapshotTime&g.x_type=ordinal&g.y_column=totalEstCustAffected&g.y_type=quantitative"><img src="../img/2019-12-18-power-utility-data/customers_affected_over_time.png" alt="A chart of customers affected by power outages over time."></a>
-Here is a <a href="http://poweroutages.codeforkentuckiana.org/outages?sql=select+snapshots.id%2C+title+as+snapshotTime%2C+hash%2C+sum%28outage_snapshots.estCustAffected%29+as+totalEstCustAffected%0D%0Afrom+snapshots+join+outage_snapshots+on+snapshots.id+%3D+outage_snapshots.snapshot%0D%0Agroup+by+snapshots.id+order+by+snapshots.id+desc+limit+100#g.mark=line&g.x_column=snapshotTime&g.x_type=ordinal&g.y_column=totalEstCustAffected&g.y_type=quantitative">chart of the number of affected customers over time.</a>
+<a href="http://poweroutages.openkentuckiana.org/outages?sql=select+snapshots.id%2C+title+as+snapshotTime%2C+hash%2C+sum%28outage_snapshots.estCustAffected%29+as+totalEstCustAffected%0D%0Afrom+snapshots+join+outage_snapshots+on+snapshots.id+%3D+outage_snapshots.snapshot%0D%0Agroup+by+snapshots.id+order+by+snapshots.id+desc+limit+100#g.mark=line&g.x_column=snapshotTime&g.x_type=ordinal&g.y_column=totalEstCustAffected&g.y_type=quantitative"><img src="../img/2019-12-18-power-utility-data/customers_affected_over_time.png" alt="A chart of customers affected by power outages over time."></a>
+Here is a <a href="http://poweroutages.openkentuckiana.org/outages?sql=select+snapshots.id%2C+title+as+snapshotTime%2C+hash%2C+sum%28outage_snapshots.estCustAffected%29+as+totalEstCustAffected%0D%0Afrom+snapshots+join+outage_snapshots+on+snapshots.id+%3D+outage_snapshots.snapshot%0D%0Agroup+by+snapshots.id+order+by+snapshots.id+desc+limit+100#g.mark=line&g.x_column=snapshotTime&g.x_type=ordinal&g.y_column=totalEstCustAffected&g.y_type=quantitative">chart of the number of affected customers over time.</a>
 
-<a href="http://poweroutages.codeforkentuckiana.org/outages/most_recent_snapshot"><img src="../img/2019-12-18-power-utility-data/most_recent_outages_map.png" alt="A map of outages for the most recent outage snapshot."></a>
-Here is a <a href="http://poweroutages.codeforkentuckiana.org/outages/most_recent_snapshot">map the outages included in the most recent snapshot.</a>
+<a href="http://poweroutages.openkentuckiana.org/outages/most_recent_snapshot"><img src="../img/2019-12-18-power-utility-data/most_recent_outages_map.png" alt="A map of outages for the most recent outage snapshot."></a>
+Here is a <a href="http://poweroutages.openkentuckiana.org/outages/most_recent_snapshot">map the outages included in the most recent snapshot.</a>
 
 #### Raw Data
 
-If you would like to work with the raw SQLite database, you can download it here: [http://poweroutages.codeforkentuckiana.org/outages.db](http://poweroutages.codeforkentuckiana.org/outages.db)
+If you would like to work with the raw SQLite database, you can download it here: [http://poweroutages.openkentuckiana.org/outages.db](http://poweroutages.openkentuckiana.org/outages.db)
 
 ### Technical Details
 
