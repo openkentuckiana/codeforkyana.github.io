@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
-url: "https://codeforkentuckiana.org"
+url: "https://openkentuckiana.org"
 #baseurl: "/"
 
 # If you are building a GitHub project page then use these settings:
@@ -14,10 +14,10 @@ url: "https://codeforkentuckiana.org"
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Code for Kentuckiana
+title: Open Kentuckiana
 
 # Short description of your site
-description: Louisville's Code for America Brigade
+description: Using technology to make Louisville and Kentuckiana a better place
 
 # --- Navigation bar options --- #
 
@@ -28,7 +28,6 @@ navbar-links:
   Get Involved: "get-involved"
   Resources:
   - Code of Conduct: "https://github.com/codeforamerica/codeofconduct"
-  - Bylaws: "bylaws"
   - Board Meeting Minutes and Agendas: "minutes-agendas"
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -37,7 +36,7 @@ navbar-links:
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-title-img: "/img/cfk-logo.png"
+title-img: "/img/ok-logo.png"
 
 # --- Background colour/image options --- #
 
@@ -65,7 +64,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Code for Kentuckiana
+  name: Open Kentuckiana
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -74,10 +73,8 @@ author:
 social-network-links:
   rss: true
   #email: "someone@example.com"
-  facebook: CodeForKYana
-  github: CodeForKYana
-  twitter: CodeForKYana
-  instagram: CodeForKYana
+  github: OpenKentuckiana
+  twitter: OpenKentuckiana
 #  reddit: yourname
 #  google-plus: +DeanAttali
 #  linkedin: daattali
@@ -100,7 +97,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "CodeForKentuckiana.org"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "OpenKentuckiana.org"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
